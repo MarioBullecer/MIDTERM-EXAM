@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Official Gazette Philippines</title>
+</head>
+<body>
+    
+      <!-- Navigation Bar -->
+      <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+                <span>Official Gazette</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" >Home</a></li>
+                    <li><a onclick="pageNotAvailableModal()">About</a></li>
+                    <li><a href="./faq.html" >FAQ</a></li>
+                    <li><span id="openModalBtn" onclick="openLoginModal()" class="button">Sign In</span></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+        <div class="home-page-container">
+            <div class="home-page-main-content">
+              <!-- Hero Section -->
+              <div class="home-page-hero">
+                <img src="./assets/images/gazette.png" alt="Hero Image" />
+                 <p style="margin: 10px 0;">The Official Gazette serves as the official journal of the Republic of the Philippines. This website represents the digital version of the printed Official Gazette, which was established through Act No. 453 and Commonwealth Act No. 638.</p>
+              </div>
+        
+              <!-- Two Column Grid -->
+              <div class="home-page-grid">
+                <div class="home-page-card">
+                  <h3>Government Report on the Human Rights Situation in the Philippines for 2020-2022</h3>
+                  <img src="./assets/images/yoman rayts.jpg" alt="Left Image" class="home-page-img"/>
+                </div>
+                <div class="home-page-card">
+                  <h3>Relevant Legislation and Government Actions in the Philippines for 2020-2022</h3>
+    
+                  <img src="./assets/images/govact3.png" alt="Right Image"  class="home-page-img" />
+                </div>
+              </div>
+
+
+
+              <div class="home-page-flex-section">
+                <div class="home-page-flex-box">
+                    <h3 style="margin-top: 15px;"><i class="fa-solid fa-gavel"></i> REPUBLIC ACTS & IRRS</h3>
+                    <div class="home-page-dropdown">
+                        <p>Republic Act No. 12134</p>
+                        <p>Republic Act No. 12133</p>
+                        <p>Republic Act No. 12132</p>
+                        <p>Republic Act No. 12131</p>
+                        <button class="more-btn">more</button>
+                    </div>
+                </div>
+            
+                <div class="home-page-flex-box">
+                    <h3><i class="fa-solid fa-pen-nib"></i> EXECUTIVE ORDERS & IRRS</h3>
+                    <div class="home-page-dropdown">
+                        <p>Executive Order No. 84, s. 2025</p>
+                        <p>Executive Order No. 83, s. 2025</p>
+                        <p>Executive Order No. 82, s. 2025</p>
+                        <p>Executive Order No. 81, s. 2024</p>
+                        <button class="more-btn">more</button>
+                    </div>
+                </div>
+            
+                <div class="home-page-flex-box">
+                    <h3 style="margin-top: 15px;"><i class="fa-solid fa-book"></i> PROCLAMATIONS</h3>
+                    <div class="home-page-dropdown">
+                        <p>Proclamation No. 848, s. 2025</p>
+                        <p>Proclamation No. 847, s. 2025</p>
+                        <p>Proclamation No. 845, s. 2025</p>
+                        <p>Proclamation No. 844, s. 2025</p>
+                        <button class="more-btn">more</button>
+                    </div>
+                </div>
+
+
+                <div class="home-page-flex-box">
+                  <h3><i class="fa-solid fa-envelope"></i> ADMINISTRATIVE ORDERS & IRRS</h3>
+                  <div class="home-page-dropdown">
+                      <p>Administrative Order No. 29, s. 2025</p>
+                      <p>Administrative Order No. 28, s. 2024</p>
+                      <p>Administrative Order No. 27, s. 2024</p>
+                      <p>Administrative Order No. 26, s. 2024</p>
+                      <button class="more-btn">more</button>
+                  </div>
+              </div>
+          
+              <div class="home-page-flex-box">
+                  <h3><i class="fa-solid fa-landmark"></i> MEMORANDUM CIRCULARS</h3>
+                  <div class="home-page-dropdown">
+                      <p>Memorandum Circular No. 78, s. 2025</p>
+                      <p>Memorandum Circular No. 77, s. 2025</p>
+                      <p>Memorandum Circular No. 76, s. 2025</p>
+                      <p>Memorandum Circular No. 75, s. 2024</p>
+                      <button class="more-btn">more</button>
+                  </div>
+              </div>
+          
+              <div class="home-page-flex-box">
+                  <h3 style="margin-top: 15px;"><i class="fa-solid fa-newspaper"></i> MEMORANDUM ORDERS</h3>
+                  <div class="home-page-dropdown">
+                      <p>Memorandum Order No. 31, s. 2024</p>
+                      <p>Memorandum Order No. 27, s. 2024</p>
+                      <p>Memorandum Order No. 25, s. 2024</p>
+                      <p>Memorandum Order No. 24, s. 2024</p>
+                      <button class="more-btn">more</button>
+                  </div>
+              </div>
+
+
+            </div>
+
+
+
+            </div>
+        
+            <!-- Sidebar -->
+            <aside class="home-page-sidebar">
+              <!-- Search -->
+              <div class="faq-page-input-container" style="position: relative;">
+                <input type="text" id="search-input" placeholder="Search Official Gazette..." class="faq-page-input" style="padding-right: 30px;">
+                <ul id="suggestions" class="suggestions-list"></ul>
+
+                
+                <div class="search-icon-container">
+                  <a href="./advanced-search.html"><i class="fas fa-search" ></i>
+                  <div class="tooltip">Advanced Search</div>
+                </div>
+              </div>
+              
+              
+
+
+              <div class="trending-filter">
+                <button class="active">Recent</button>
+                <button>Masterlist</button>
+                <button>Constitutions</button>
+                 </div>
+
+         
+
+
+        
+              <!-- Recent Posts -->
+              <div class="home-page-widget holidays-widget">
+                <h4>
+                    HOLIDAYS <span><i class="fa-regular fa-calendar"></i></span>
+                </h4>
+            
+                <div class="holiday-category nationwide">
+                    <span class="holiday-header">Nationwide</span>
+                    <ul>
+                        <li><strong>April 1 (Tue)</strong> - Ramadan<br> <small>Regular</small></li>
+                        </ul>
+                </div>
+            
+                <div class="holiday-category regional">
+                    <span class="holiday-header">Regional</span>
+                    <ul>
+                        <li><strong>April 4 (Fri)</strong> - Laak, Davao De Oro <br> <small>XI - Davao Region</small></li>
+                        <li><strong>April 3 (Thu)</strong> - Balangiga, Eastern Samar <br> <small>VIII - Eastern Visayas</small></li>
+                        <li><strong>April 3 (Thu)</strong> - Magsaysay, Occidental Mindoro <br> <small>IV-B / MIMAROPA - Southwestern Tagalog Region</small></li>
+                        <li><strong>April 3 (Thu)</strong> - Rizal, Occidental Mindoro <br> <small>IV-B / MIMAROPA - Southwestern Tagalog Region</small></li>
+                        <li><strong>April 2 (Wed)</strong> - Province Of Bataan <br> <small>III - Central Luzon</small></li>
+                        <li><strong>April 1 (Tue)</strong> - Tanjay City, Negros Oriental <br> <small>VI - Central Visayas</small></li>
+                        <li><strong>April 1 (Tue)</strong> - Agdangan, Quezon <br> <small>IV-A - CALABARZON</small></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="home-page-widget trending-widget">
+                <h4>TRENDING <span> <i class="fa-solid fa-fire"></i></span></h4>
+            
+                <div class="trending-filter">
+                    <button class="active">Recent</button>
+                    <button>Last Week</button>
+                    <button>Last Month</button>
+                    <button>All Time</button>
+                </div>
+            
+                <ul class="trending-list">
+                    <li><a href="#"><span class="trend-span" >1</span> Proclamation No. 839, s. 2025 <br><small class="trend-small">March 20, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span" >2</span> Proclamation No. 822, s. 2025 <br><small class="trend-small">March 7, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">3</span> Republic Act No. 12124 <br><small class="trend-small">March 3, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">4</span> Proclamation No. 830, s. 2025 <br><small class="trend-small">March 13, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">5</span> Proclamation No. 818, s. 2025 <br><small class="trend-small">March 3, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">6</span> Executive Order No. 84, s. 2025 <br><small class="trend-small">March 14, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">7</span> Proclamation No. 844, s. 2025 <br><small class="trend-small">March 21, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">8</span> Proclamation No. 848, s. 2025 <br><small class="trend-small">March 25, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">9</span> Proclamation No. 847, s. 2025 <br><small class="trend-small">March 25, 2025</small></a></li>
+                    <li><a href="#"><span class="trend-span">10</span> Proclamation No. 824, s. 2025 <br><small class="trend-small">March 7, 2025</small></a></li>
+                </ul>
+                
+            </div>
+        
+              <!-- Tweets -->
+              <div class="home-page-widget" style="display: none;">
+                <h4>Recent Tweets</h4>
+                <p>Tweet 1</p>
+                <p>Tweet 2</p>
+              </div>
+            </aside>
+          </div>
+
+
+
+<!-- Login Modal Container -->
+<div id="loginModal" class="login-modal">
+  <div class="login-form-container">
+    <!-- Close Button inside the form container -->
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeModal()"></i>
+    
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <h1 class="login-form-title">Sign In</h1>
+
+    <form>
+      <input type="email" placeholder="Email address" class="login-form-input" required>
+      <div class="password-input-container">
+        <input type="password" id="passwordInput" placeholder="Password" class="login-form-input" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('passwordInput')"></i>
+      </div>
+
+      <div class="login-form-options">
+        <label>
+          <input type="checkbox"> Remember for 30 days
+        </label>
+        <a  onclick="openForgotPasswordModal()" style="cursor: pointer;">Forgot password</a>
+      </div>
+
+      <button type="submit" class="login-form-button">Sign in</button>
+
+      <button type="button" class="login-form-google-btn">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google logo">
+        <span>Sign in with Google</span>
+      </button>
+    </form>
+
+    <p class="login-form-signup-text">
+      Don't have an account? <a href="#" onclick="openSignupModal()">Sign up</a>
+    </p>
+  </div>
+</div>
+
+
+<!-- Signup Modal Container -->
+<div id="signupModal" class="login-modal">
+  <div class="login-form-container">
+    <!-- Close Button inside the form container -->
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeModal()"></i>
+
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <h1 class="login-form-title">Sign Up</h1>
+
+    <form onsubmit="return validateSignupForm()">
+      <input type="text" placeholder="Full name" class="login-form-input" required>
+      <input type="email" placeholder="Email address" class="login-form-input" required>
+      
+      <div class="password-input-container">
+        <input type="password" id="signupPassword" placeholder="Password" class="login-form-input" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('signupPassword')"></i>
+      </div>
+      <p id="passwordLengthMessage" style="color: rgb(255, 0, 0, .77); font-size: 12px; display: none;" >Password must be at least 8 characters long.</p> 
+      <div class="password-input-container">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" class="login-form-input" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('confirmPassword')"></i>
+      </div>
+    
+      <p id="passwordMismatchMessage" style="color: rgba(255, 3, 3, 0.77); display: none; margin-bottom: 10px; font-size: 12px;">Passwords didn't matched!</p>
+     
+      <p id="passwordComplexityMessage" style="color: rgb(255, 0, 0, .77); display: none; margin-bottom: 10px;">Password must contain at least one uppercase letter, one lowercase letter, one number, and one symbol.</p>
+    
+ 
+   
+     
+
+
+      <button type="submit" class="login-form-button" onclick="openAccountSuccessModal()">Sign up</button>
+
+      <button type="button" class="login-form-google-btn">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google logo">
+        <span>Sign up with Google</span>
+      </button>
+    </form>
+
+    <p class="login-form-signup-text">
+      Already have an account? <a href="#" onclick="openLoginModal()" style="cursor: pointer;">Sign in</a>
+    </p>
+  </div>
+</div>
+
+<!-- Forgot Password Modal Container -->
+<div id="forgotPasswordModal"   class="login-modal">
+  <div class="login-form-container">
+    <!-- Close Button inside the form container -->
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeModal()"></i>
+
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <h1 class="login-form-title">Forgot Password</h1>
+
+
+
+    <form >
+      <input type="text" placeholder="Email address" class="login-form-input" >
+      <br>
+      <p class="login-form-description">
+        Enter your registered email address, and we will send you a link to reset your password.
+      </p>
+<br>   
+
+      <button type="submit" class="login-form-button" onclick="openSuccessModal()">Send Reset Link</button>
+
+      <button type="button" class="login-form-google-btn">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google logo">
+        <span>Sign in with Google</span>
+      </button>
+    </form>
+
+    <p class="login-form-signup-text">
+      Remembered your password? <a href="#" onclick="openLoginModal()" style="cursor: pointer;">Sign in</a>
+    </p>
+  </div>
+</div>
+
+
+
+<div id="successModal" class="login-modal">
+  <div class="login-form-container">
+
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeSuccessModal()"></i>
+
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <br>
+    <!-- Add flexbox container for the success message -->
+    <div class="success-message">
+      <img src="./assets/images/check.png" alt="Check" class="success-image">
+    
+    <p style="font-weight: bold;font-size: 25px;">Request Sent Succesfully!<p>
+    </div>
+    
+    <p class="login-form-description" style="text-align: center;">
+      We have sent you a password reset link. <br>Please check your email.
+    </p><br>
+    
+
+    <button type="button" class="login-form-button" onclick="openChangePasswordModal()">OK</button>
+  </div>
+</div>
+
+<div id="accountsuccessModal" class="login-modal">
+  <div class="login-form-container">
+
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeModal()"></i>
+
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <br>
+    <!-- Add flexbox container for the success message -->
+    <div class="success-message">
+      <img src="./assets/images/check.png" alt="Check" class="success-image">
+    
+    <p style="font-weight: bold;font-size: 25px;">Account Succesfully Created<p>
+    </div>
+    
+    <p class="login-form-description" style="text-align: center;">
+      You can now Sign in.
+    </p><br>
+    
+
+    <button type="button" class="login-form-button" onclick="closeModal()">Ok</button>
+  </div>
+</div>
+
+
+
+
+<div id="pageNotAvailableModal" class="login-modal">
+  <div class="login-form-container">
+
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeModal()"></i>
+
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <br>
+    <!-- Add flexbox container for the success message -->
+    <div class="success-message">
+      <img src="./assets/images/waern1.webp" alt="Check" class="success-image">
+    
+    <p style="font-weight: bold;font-size: 25px;">Sorry this page is not available right now.<p>
+    </div>
+    
+    <p class="login-form-description" style="text-align: center;">
+      
+    </p><br>
+    
+
+    <button type="button" class="login-form-button" onclick="closeModal()">Go Back</button>
+  </div>
+</div>
+
+
+
+<div id="changePasswordModal" class="login-modal">
+  <div class="login-form-container">
+    <i class="fa-solid fa-xmark login-modal-close" onclick="closeModal()"></i>
+
+    <div class="login-form-subtitle">
+      <img src="./assets/images/logo.png" alt="Logo" class="login-form-logo">
+      <span>Official Gazette</span>
+    </div>
+    <h1 class="login-form-title">Change Password</h1>
+
+    <form id="changePasswordForm" onsubmit="return validateChangePasswordForm()">
+      <div class="password-input-container">
+        <input type="password" id="currentPassword" placeholder="Current Password" class="login-form-input" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('currentPassword')"></i>
+      </div>
+
+      <div class="password-input-container">
+        <input type="password" id="newPassword" placeholder="New Password" class="login-form-input" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('newPassword')"></i>
+      </div>
+
+      <div class="password-input-container">
+        <input type="password" id="confirmNewPassword" placeholder="Confirm New Password" class="login-form-input" required>
+        <i class="fa-solid fa-eye toggle-password" onclick="togglePasswordVisibility('confirmNewPassword')"></i>
+      </div>
+
+      <p id="passwordMismatchMessage" style="color: rgb(255, 0, 0, .77); display: none; margin-bottom: 10px;">Passwords do not match.</p>
+
+      <button type="submit" class="login-form-button" onclick="validateChangePasswordForm()">Change Password</button>
+    </form>
+
+    <p class="login-form-signup-text">
+      Want to cancel? <a href="#" onclick="closeModal()" style="cursor: pointer;">Close</a>
+    </p>
+  </div>
+</div>
+
+
+
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

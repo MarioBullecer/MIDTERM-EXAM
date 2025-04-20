@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Official Gazette Philippines</title>
+</head>
+<body>
+    
+      <!-- Navigation Bar -->
+      <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+                <span>Official Gazette</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a onclick="pageNotAvailableModal()">About</a></li>
+                    <li><a href="./faq.html" >FAQ</a></li>
+                    <li><span id="openModalBtn" onclick="openLoginModal()" class="button">Sign In</span></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+
+<div class="home-page-container">
+    <div class="home-page-main-content">
+      <!-- Hero Section -->
+      <div class="home-page-hero">
+        <div class="table-list-container">
+            <table class="table-list-table">
+              <thead class="table-list-thead">
+                <tr>
+                  <th>Order No.</th>
+                  <th>Date Posted</th>
+                  <th>Title</th>
+                  <th>President</th>
+                </tr>
+              </thead>
+              <tbody class="table-list-tbody">
+                <tr>
+                  <td>Memorandum Order No. 36 s. 2025</td>
+                  <td>Apr 08, 2025</td>
+                  <td>Authorizing the NAC to issue Safe Conduct Passes for Amnesty Applicants (Proclamation Nos. 403–406, s. 2023)</td>
+                  <td>Ferdinand R. Marcos Jr.</td>
+                </tr>
+                <tr> 
+                  <td>Memorandum Order No. 31 s. 2024</td>
+                  <td>Aug 27, 2024</td>
+                  <td>Concurrence in the Deputation of Law Enforcement for the 31 Aug 2024 Plebiscite (Barangay Bagong Silang)</td>
+                  <td>Ferdinand R. Marcos Jr.</td>
+                </tr>
+
+
+                <tr>
+                    <td>Memorandum Circular No. 72 s. 2024</td>
+                    <td>Oct 28, 2024</td>
+                    <td>Adopting the National Human Resources for Health Master Plan 2020–2040 and Directing Its Implementation</td>
+                    <td>Ferdinand R. Marcos Jr.</td>
+                  </tr>
+                  <tr>
+                    <td>Memorandum Circular No. 71 s. 2024</td>
+                    <td>Oct 25, 2024</td>
+                    <td>Office of the President – Malacañang: Memorandum Circular No. 71</td>
+                    <td>Ferdinand R. Marcos Jr.</td>
+                  </tr>
+                  <tr>
+                    <td>Memorandum Circular No. 69 s. 2024</td>
+                    <td>Oct 24, 2024</td>
+                    <td>Office of the President – Malacañang: Memorandum Circular No. 69</td>
+                    <td>Ferdinand R. Marcos Jr.</td>
+                  </tr>
+                  <tr>
+                    <td>Memorandum Circular No. 57 s. 2024</td>
+                    <td>Jul 23, 2024</td>
+                    <td>Office of the President – Malacañang: Memorandum Circular No. 57</td>
+                    <td>Ferdinand R. Marcos Jr.</td>
+                  </tr>
+                  <tr>
+                    <td>Memorandum Circular No. 55 s. 2024</td>
+                    <td>Jul 16, 2024</td>
+                    <td>Directing All Government Agencies to Support the Philippines' Hosting of the 22nd Asian Karate Youth Championships</td>
+                    <td>Ferdinand R. Marcos Jr.</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          
+      </div> 
+
+      </div>
+
+      <aside class="home-page-sidebar">
+        <!-- Advanced Search Widget -->
+        <div class="home-page-widget advanced-search-widget">
+          <h4>
+            ADVANCED SEARCH <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </h4>
+      
+          <form action="/search" method="GET">
+            <!-- Keyword Input -->
+            <div class="form-group">
+              <label for="keyword">Keyword</label>
+              <input type="text" id="keyword" name="keyword" placeholder="Enter keyword..." />
+            </div>
+      
+            <!-- Category Dropdown -->
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option value="">All Categories</option>
+                <option value="proclamation">Proclamation</option>
+                <option value="executive-order">Executive Order</option>
+                <option value="republic-act">Republic Act</option>
+                <option value="memorandum">Memorandum</option>
+              </select>
+            </div>
+      
+            <!-- Region Dropdown -->
+            <div class="form-group">
+              <label for="region">Region</label>
+              <select id="region" name="region">
+                <option value="">All Regions</option>
+                <option value="ncr">NCR</option>
+                <option value="car">CAR</option>
+                <option value="region-iii">Region III – Central Luzon</option>
+                <option value="region-iv-a">Region IV-A – CALABARZON</option>
+                <!-- Add other regions as needed -->
+              </select>
+            </div>
+      
+            <!-- Date Range -->
+            <div class="form-group">
+              <label>Date Range</label>
+              <input type="date" name="date_from" /> to
+              <input type="date" name="date_to" />
+            </div>
+      
+            <!-- Submit Button -->
+            <div class="form-group">
+              <button type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </aside>
+      
+
+
+
+
+
+
+
+      </div></body></html>
